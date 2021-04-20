@@ -1,0 +1,104 @@
+.react-datepicker{
+    width: 100%;
+}
+
+.react-datepicker__month-container {
+    width: 100%;
+}
+
+.react-datepicker {
+    background-color: unset;
+    border: 0;
+}
+
+.react-datepicker__header {
+    background-color: unset;
+    margin: 0 10px;
+}
+
+.react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name {
+    width: 12%;
+    line-height: 2.7rem;
+}
+
+.calendar__container{
+    width: 100%;
+    height: calc(100% - 17px);
+    position: absolute;
+    z-index: 100;
+    padding: 17px 0 0;
+    top: 0%;
+    background: rgb(222 222 222);
+}
+
+.calendar__header {
+    width: 100%;
+    margin: 0 0 11px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #4b4b4d;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.calendar__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #f7f1e9;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 88px;
+    z-index: 1;
+    padding: 0 18px;
+}
+
+.calendar__selected-dates {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    min-width: 100%;
+    padding: 0 19px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 27px;
+    color: #a9adb5;
+}
+
+.calendar__selected-dates div > span {
+    display: block;
+    margin-top: -1px;
+    font-family: Gilmer,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4b4b4d;
+}
+
+.calendar__selected-dates div:nth-child(2) > span:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 10px;
+    background: #4b4b4d;
+    right: 72%;
+    top: 33px;
+    transform: translateX(-50%);
+    margin: 24px 0 0 -16px;
+}
+
+.calendar__button {
+    background: #4d6447;
+    border: none;
+    cursor: pointer;
+    width: 121px;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}

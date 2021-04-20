@@ -1,0 +1,107 @@
+.container {
+    position: absolute;
+    overflow: hidden;
+    z-index: 5;
+    top: 0;
+    height: 100%;
+    background: rgb(222 222 222);
+    box-shadow: 0 0 1px 0 #364631;
+    text-align:  left;
+}
+
+.title {
+    font-family: Milkman, sans-serif;
+    color: #4d6447;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 26px;
+    margin: 14px 0 14px;
+}
+
+.body {
+    margin: 0 auto;
+}
+
+.description {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+}
+
+.card__content {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.booking__image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.text__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    margin-left: 1.5vh;
+
+}
+
+.button__container {
+    height: 5vh;
+    display: grid;
+    margin-top: 1.5vh;
+}
+
+.booking__button {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 10px 0;
+    background: #4d6447;
+}
+
+.booking__button-close {
+    position: absolute;
+    z-index: 5;
+    top: 10px;
+    right: 10px;
+    text-indent: -5000px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.booking__button-close::after, .booking__button-close::before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    background: #4b4b4d;
+    top: 50%;
+    left: 50%;
+    text-indent: -5000px;
+    width: 15px;
+    height: 1.5px;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.booking__button-close::after {
+    width: 1.5px;
+    height: 15px;
+    transform: translate(-50%,-50%) rotate(-135deg);
+}
+
+.booking__offers {
+    color: #4b4b4d;
+    margin: 14px 0 0;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.booking__offers--price {
+    font-weight: 600;
+}

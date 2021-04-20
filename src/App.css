@@ -1,0 +1,57 @@
+.App {
+  background: rgb(222 222 222);
+  font-family: Gilmer,sans-serif;
+}
+
+.App-logo {
+  height: 7vmin;
+  float: left;
+  pointer-events: none;
+}
+
+.App-logo-container {
+  padding: 5vmin;
+}
+
+.App-nav-menu {
+  float: right;
+  padding: 2.3vmin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+  }
+}
+
+.App-header {
+  background-color: rgb(222 222 222);
+  min-height: 7vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  box-shadow: 0 1px 0 0 #ccc8cc;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.site-content {
+  margin: 0 auto;
+  max-width: calc(100% - 30px);
+}
+
+.btn {
+  width: 100%;
+  height: 48px;
+  color: white;
+  border: 0;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.btn-disabled, .btn[disabled] {
+  opacity: .5;
+  pointer-events: none;
+}

@@ -1,0 +1,57 @@
+.card {
+  display: flex;
+  flex: 1 0 80%;
+  flex-direction: column;
+  margin: 0 0.7vh;
+  padding: 1.5vh;
+  background-color: #fff;
+}
+
+.card__content {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    min-width: 18vh;
+    max-width: 18vh;
+    object-fit: cover;
+}
+
+.text__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    margin-left: 1.5vh;
+}
+
+.text > p {
+    margin: 0;
+}
+
+.text__header {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.text__description {
+    font-size: .8rem;
+    opacity: .5;
+}
+
+.text__distance {
+    text-transform: uppercase;
+}
+
+.text__rate {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card__button {
+    background-color: orange;
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+}

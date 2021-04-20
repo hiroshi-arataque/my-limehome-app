@@ -1,0 +1,25 @@
+.wrapper{
+  overflow: hidden;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+}
+
+.slider__container {
+  display: flex;
+  flex-direction: 'row';
+}
+
+.slider__container--sliding {
+  transform: translateX(-50%);
+  transition: transform 1s ease;
+}
+
+.slider__swiping--next {
+  flex-direction: row-reverse;
+}
+
+.slider__swiping--prev {
+  flex-direction: row;
+}
